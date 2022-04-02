@@ -13,10 +13,14 @@ public class Powers {
 		int cubed = 0;
 		
 		String str1 = "Number     Squared     Cubed\n======     =======     ======";
+//		System.out.println(str1);
 		
-		// grab the index required for formatting
 		int squared_index = str1.indexOf("Squared");
 		int cubed_index = str1.indexOf("Cubed");
+//		System.out.println(squared_index);
+//		System.out.println(cubed_index);
+
+		
 		
 		for (int i = 1; i <= number; i++) {
 			squared = (int) Math.pow(i, 2);
@@ -27,6 +31,22 @@ public class Powers {
 			str1 += cubed;
 		}
 		System.out.println(str1);
+
+		
+//		
+//		for (int i = 1; i <= number; i++) {
+//			squared = (int) Math.pow(i, 2);
+//			str2 += "\n";
+//			str2+= squared;
+//		}
+//		
+//		for (int i = 1; i <= number; i++) {
+//			cubed = (int) Math.pow(i, 3);
+//			str3 += "\n";
+//			str3 += cubed;
+//		}
+	
+
 
 	}
 

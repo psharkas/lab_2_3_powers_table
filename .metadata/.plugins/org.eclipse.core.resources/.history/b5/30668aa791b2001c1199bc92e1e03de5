@@ -13,20 +13,36 @@ public class Powers {
 		int cubed = 0;
 		
 		String str1 = "Number     Squared     Cubed\n======     =======     ======";
+		System.out.println(str1);
 		
-		// grab the index required for formatting
-		int squared_index = str1.indexOf("Squared");
-		int cubed_index = str1.indexOf("Cubed");
+		
 		
 		for (int i = 1; i <= number; i++) {
 			squared = (int) Math.pow(i, 2);
 			cubed = (int) Math.pow(i, 3);	
 			str1 += "\n";
-			str1 += str1.format("%-11d", i);
-			str1 += str1.format("%-12d", squared);
-			str1 += cubed;
+			str1 += i;
+			str1 = str1.substring(0,11) + squared + str1.substring(11); 
+//			str1 += "           ";
+//			str1 += cubed;
 		}
 		System.out.println(str1);
+
+		
+//		
+//		for (int i = 1; i <= number; i++) {
+//			squared = (int) Math.pow(i, 2);
+//			str2 += "\n";
+//			str2+= squared;
+//		}
+//		
+//		for (int i = 1; i <= number; i++) {
+//			cubed = (int) Math.pow(i, 3);
+//			str3 += "\n";
+//			str3 += cubed;
+//		}
+	
+
 
 	}
 
